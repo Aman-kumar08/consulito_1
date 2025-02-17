@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultio Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header section  -->
+  <header class="bg-primary text-white">
+    <div class="container-fluid px-5 py-2 d-flex justify-content-between align-items-center">
+      <div class="ms-5">
+        <a href="#" class="text-white text-decoration-none"><i class="fas fa-envelope me-1"></i>
+          info@consultio.com</a>
+        <a href="#" class="text-white text-decoration-none ms-3"><i class="fas fa-phone me-1"></i> (+888) 452
+          1505</a>
+        <a href="#" class="text-white text-decoration-none ms-3"><i class="fas fa-map-marker-alt me-1"></i> 380
+          St Kilda Road, Melbourne, Australia</a>
+      </div>
+      <div class="me-5">
+        <a href="#" class="text-white text-decoration-none me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white text-decoration-none me-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white text-decoration-none me-2"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white text-decoration-none"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- header section end  -->
+  <!-- navbar section  -->
+  <nav class="navbar bg-body-tertiary ">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid px-5 ">
+          <img src="logo-dark.png" alt="" class="ps-4 ms-3" width="230px">
+          <div class="collapse navbar-collapse ms-10" id="navbarNav">
+            <ul class="navbar-nav ms-4">
+              <li class="nav-item ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#">Demos</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#">Services</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#">About Us</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#">Projects</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#">Pricing</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#">Blog</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#">Contact</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#"><i class="fas fa-search"></i></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-dark fw-bold ms-4" href="#"><i class="fas fa-shopping-cart"></i></a> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Collapsible Side Menu -->
+      <main>
+        <div class="navbar me-5 pe-2 float-end">
+          <div class="container-fluid">
+            <button class="navbar-toggler border-none me-4 mt-2" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon bg-white"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="logo-dark.png" alt="" class="ps-4 ms-3" width="230px">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body w-75 ms-5">
+                <p class="text-start">At vero eos et accusamus et iusto odio digni goikussimos ducimus qui to bonfo
+                  blanditiis praese. Ntium
+                  voluum deleniti atque</p>
+              </div>
+              <div class="contact-info text-center" style="margin-bottom: 6rem;">
+                <div class="item">
+                  <i class="fas fa-phone text-primary"></i>
+                  <div class="map">
+                    Call Us: (210) 123-451<br>
+                    (Sat - Thursday)
+                  </div>
+                </div>
+                <div class="item">
+                  <i class="fas fa-envelope text-primary"></i>
+                  <div class="map">
+                    Mail us for help<br>
+                    info@consultio.com
+                  </div>
+                </div>
+                <div class="item">
+                  <i class="fas fa-map-marker-alt text-primary"></i>
+                  <div class="map">
+                    380 St Kilda Road<br>
+                    Melbourne, Australia
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Collapsible Side menu end -->
+  </nav>
+  <!-- navbar end  -->
+  <!-- hero section  -->
+  <div class="hero-section">
+    <div class="overlay"></div>
+    <div class="container text-white">
+      <div class="hero-content">
+        <h1 class="fw-bold display-2 mb-5 animated-text">Belonging, Support<br>Equity at Work</h1>
+        <p class="fs-4 mb-5 animated-text">Without Consulting , plans stay as plans.</p>
+        <button class="btn btn-primary free btn-lg p-3 animated-text"><i class="fas fa-phone me-1"></i> Free
+          Consultation</button>
+      </div>
+    </div>
+    <!-- hero section end  -->
+    <!-- Circle Images -->
+    <div class="circle-container image">
+      <div class="circle" style="background-image: url('bg-slider1-90x90.jpg');"></div>
+      <div class="circle" style="background-image: url('bg-slider2-90x90.jpg');"></div>
+      <div class="circle" style="background-image: url('bg-slider3-90x90.jpg');"></div>
+    </div>
+  </div>
+  <!-- circleimage end  -->
+  <!-- Our Awesome Services -->
+  <div class="container my-5 pt-5">
+    <div class="text-center mt-5">
+      <div class="d-flex align-items-center justify-content-center text-center mb-3" style="height: 100px;">
+        <!-- Circles -->
+        <div class="rounded-circle bg-primary" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+        <div class="rounded-circle bg-dark" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+        <div class="rounded-circle bg-primary" style="width: 10px; height: 10px; margin-right: 10px;"></div>
+        <h5 class="text-primary mb-0">Our Awesome Services</h5>
+      </div>
+      <h2 class="fw-bold fs-1">We've Many Services <br>to Solve Problems</h2>
+      <p class="text-muted fs-5 ">Consultio is a design studio founded in London and expanded our services,<br> and
+        become a multinational firm, offering solutions Worldwide.</p>
+    </div>
+    <!-- cards  -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card 1 -->
+      <div class="col mt-5">
+        <div class="card-container mt-5">
+          <div class="card-flip">
+            <!-- Front Side -->
+            <div class="card-front text-center border border-2">
+              <div class="bg-primary text-white d-flex justify-content-center align-items-center mx-auto"
+                style="width: 85px; height: 85px; margin-top: -30px;">
+                <i class="bi bi-people fs-1"></i>
+              </div>
+              <div class="card-body bg-gray">
+                <h5 class="card-title fw-bold mt-5 fs-4">Tax Consulting</h5>
+                <p class="card-text text-muted mt-4 p-4">Consultio is a design studio founded in London. Nowadays, we've
+                  grown...</p>
+              </div>
+            </div>
+            <!-- Back Side -->
+            <div class="card-back text-center">
+              <img src="update-service-01.jpg" alt="Tax Consulting" class="img-fluid rounded-top">
+              <div class="bg-primary text-white py-2">
+                <p class="m-0 fs-4 fw-bold">Tax Consulting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col mt-5">
+        <div class="card-container mt-5">
+          <div class="card-flip">
+            <!-- Front Side -->
+            <div class="card-front text-center border border-2">
+              <div class="bg-primary text-white d-flex justify-content-center align-items-center mx-auto"
+                style="width: 85px; height: 85px; margin-top: -30px;">
+                <i class="bi bi-graph-up fs-1"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-5 fs-4">Content Marketing</h5>
+                <p class="card-text text-muted mt-4 p-4">We develop the relationships that underpin the next phase in
+                  your...</p>
+              </div>
+            </div>
+            <!-- Back Side -->
+            <div class="card-back text-center">
+              <img src="update-service-02.jpg" alt="Content Marketing" class="img-fluid rounded-top">
+              <div class="bg-primary text-white py-2">
+                <p class="m-0 fs-4 fw-bold">Content Marketing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col mt-5">
+        <div class="card-container mt-5">
+          <div class="card-flip">
+            <!-- Front Side -->
+            <div class="card-front text-center border border-2">
+              <div class="bg-primary text-white d-flex justify-content-center align-items-center mx-auto "
+                style="width: 85px; height: 85px; margin-top: -30px;">
+                <i class="bi bi-lightbulb fs-1"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-5 fs-4">SEO Optimization</h5>
+                <p class="card-text text-muted mt-4 p-4">What separates us from all other web design agencies is
+                  ability...</p>
+              </div>
+            </div>
+            <!-- Back Side -->
+            <div class="card-back text-center">
+              <img src="update-blog3.jpg" alt="SEO Optimization" class="img-fluid rounded-top">
+              <div class="bg-primary text-white py-2">
+                <p class="m-0 fs-4 fw-bold">SEO Optimization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cards end  -->
+  </div>
+  <!-- Our Awesome Services end  -->
+  <!-- card bottom buttons -->
+  <div id="carouselExampleprimary" class="carousel carousel-dark slide" data-bs-ride="carousel"
+    style="margin-top: 22rem;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleprimary" data-bs-slide-to="0" class="active bg-primary"
+        style="width: 15px; height: 5px;" aria-current="true" aria-label="Slide 1">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleprimary" data-bs-slide-to="1" class="bg-primary"
+        style="width: 15px; height: 5px;" aria-label="Slide 2">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleprimary" data-bs-slide-to="2" class="bg-primary"
+        style="width: 15px; height: 5px;" aria-label="Slide 3">
+      </button>
+    </div>
+  </div>
+  <!-- card bottom buttons end -->
+  <!-- About Our Company  -->
+  <div class="container py-5 ">
+    <div class="row align-items-center mt-5">
+      <!-- Text Section -->
+      <div class="col-md-6">
+        <div class="d-flex text-center mt-5" style="height: 100px;">
+          <!-- Circles -->
+          <div class="rounded-circle bg-primary mt-4" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+          <div class="rounded-circle bg-dark mt-4" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+          <div class="rounded-circle bg-primary mt-4" style="width: 10px; height: 10px; margin-right: 10px;"></div>
+          <!-- Heading -->
+          <h5 class="text-primary mt-3">About Our Company</h5>
+        </div>
+        <h1 class="fw-bold w-75 mb-4">Made to measure: Getting design leadership.</h1>
+        <p class="w-75">Soon after Chris Kempczinski became CEO, the <strong>COVID-19 pandemic</strong> hit, and the
+          restaurant chain suffered the worst quarter in its history.</p>
+        <a href="#" class="btn btn-primary btn-lg mb-2">Get Started</a>
+
+        <ul class="mt-4">
+          <li class="text-primary" ><span class="text-dark">Consultio is a Global Institut</span></li>
+          <li class="text-primary" ><span class="text-dark">Teams Moving in Different Direction</span></li>
+          <li class="text-primary" ><span class="text-dark">Making No Progress During Meeting</span></li>
+          <li class="text-primary" ><span class="text-dark">Inefficient Communication Silo</span></li>
+        </ul>
+      </div>
+
+      <!-- Image Section -->
+      <div class="col-md-6 position-relative">
+        <!-- Gray Background Behind Image -->
+        <div class="bg-light position-absolute"
+          style="margin-top: 4rem; margin-left: 16vh; width: 75%; height: 100%; z-index: 1;"></div>
+
+        <!-- Image -->
+        <img src="h-banner1.jpg" alt="Woman holding a document" class="img-fluid position-relative ms-3"
+          style="z-index: 2;">
+
+        <!-- Blue Text Overlay -->
+        <div class="bg-primary text-white p-3 rounded position-absolute"
+          style="bottom: 20px; left: -60px; width: 13rem; z-index: 3;">
+          <h5 class="mb-1 w-50">15 Years Experiences</h5>
+          <p class="mb-0 w-100">Consultio has been optimized to give your visitors the best.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About Our Company end  -->
+  <!-- Satisfied Clients  -->
+  <div class="container-fluid mt-5">
+    <div class="row text-center py-4">
+      <div class="col border-end">
+        <h3 class="fw-bold fs-1">1542<sup class="text-primary">+</sup></h3>
+        <p>Satisfied Clients</p>
+      </div>
+      <div class="col border-end">
+        <h3 class="fw-bold fs-1">182<sup class="text-primary">+</sup></h3>
+        <p>Expert Team</p>
+      </div>
+      <div class="col border-end">
+        <h3 class="fw-bold fs-1">285<sup class="text-primary">+</sup></h3>
+        <p>Activate Products</p>
+      </div>
+      <div class="col border-end">
+        <h3 class="fw-bold fs-1">28<sup class="text-primary">+</sup></h3>
+        <p>Awards Winning</p>
+      </div>
+    </div>
+
+    <div class="row"
+      style="height: 100vh; background-image: url(h-bg-section2.jpg); background-size: cover; margin-left: -12rem;">
+      <!-- FAQ Section -->
+      <div class="col-md-6" style="width: 35%; margin-left: 42vh;">
+        <h3 class="mt-5 fw-bold fs-2">Learn more from frequently asked questions</h3>
+        <div class="accordion mt-5 pt-5" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button text-dark fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                The Simple Metric That's Taking Over Big Business
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Stay ahead in a rapidly changing world. Subscribe to Bain Insights, our monthly look at
+                the critical issues facing <a href="#">global businesses</a>.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Increase in service quality and customer satisfaction
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Stay ahead in a rapidly changing world. Subscribe to Bain Insights, our monthly look at
+                the critical issues facing <a href="#">global businesses</a>.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Development of optimized customer communication
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Stay ahead in a rapidly changing world. Subscribe to Bain Insights, our monthly look at
+                the critical issues facing <a href="#">global businesses</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <div class="col-md-3" style="margin-left: 32vh;">
+        <h3 class="fw-bold fs-2 text-white mt-5">We make business successful!</h3>
+        <p class="text-white fs-5">Make a free consultation with us.</p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Your full name">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone:</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Your email address">
+          </div>
+          <div class="mb-3">
+            <label for="service" class="form-label">Service:</label>
+            <select class="form-select" id="service">
+              <option selected>Choose a service</option>
+              <option value="1">Website Development</option>
+              <option value="2">Logo Design</option>
+              <option value="3">E-Commerce Solutions</option>
+            </select>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-danger mt-4" type="button">Get a Free Consultation →</button>
+          </div>
+          <!-- <input type="text" class="form-control mt-5" placeholder="Pre-filled, non-editable text" readonly> -->
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Satisfied Clients end  -->
+  <!-- Our Partners section  -->
+  <section class="text-center py-5 mt-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center text-center mb-3" style="height: 100px;">
+        <!-- Circles -->
+        <div class="rounded-circle bg-primary" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+        <div class="rounded-circle bg-dark" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+        <div class="rounded-circle bg-primary" style="width: 10px; height: 10px; margin-right: 10px;"></div>
+        <!-- Heading -->
+        <h5 class="text-primary mb-0">Our Partners </h5>
+      </div>
+      <h2 class="fw-bold fs-1 word">We have many partners with<br> outstanding growth.</h2>
+      <p class="text-muted fs-5 mt-4">We’ve been lucky to collaborate with a long list of customers, located in
+        and<br> out of the
+        country. Thanks to them we have grown as professionals.</p>
+      <div class="row mt-5 g-5">
+        <div class="col-6 col-md-4 col-lg-2 mb-4 ">
+          <img src="client-img1.png" alt="Business" class="img-fluid">
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 ms-4">
+          <img src="client-img2.png" alt="Perfect Weather" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 ms-5">
+          <img src="client-img3.png" alt="Cox Business" class="img-fluid">
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 ms-5">
+          <img src="client-img4.png" alt="Company" class="img-fluid">
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 ms-5">
+          <img src="client-img5.png" alt="PC Whisperer" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-3 " style="border-radius: 20%;">↑</a>
+  </section>
+  <!-- Our Partners section end -->
+  <!-- we are available  -->
+  <div class="container-fluid mt-5 pt-5 "
+    style="height:23rem; width: 88.2rem; margin-left: -8vh; margin-left: -12vh; background-image: url(h-bg-section4.jpg); background-size: cover;">
+    <div class="row align-items-center">
+      <!-- Left Image Section -->
+      <div class=" position-relative tringle">
+        <!-- Centered Image -->
+        <img src="Screenshot_2025-01-21_223915-removebg-preview.png" alt="Centered Image" class="centered-img">
+      </div>
+    </div>
+  </div>
+  <!-- we are available end  -->
+
+
+  <!-- Steps to start  -->
+  <div class="container mt-5 pt-5">
+    <div class="d-flex align-items-center  mb-3">
+      <!-- Circles -->
+      <div class="rounded-circle bg-primary mt-5 ms-1" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+      <div class="rounded-circle bg-dark mt-5 ms-1" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+      <div class="rounded-circle bg-primary mt-5 ms-1" style="width: 10px; height: 10px; margin-right: 10px;"></div>
+      <!-- Heading -->
+      <h5 class="text-primary mt-5">Steps to start </h5>
+    </div>
+    <h2 class="fw-bold fs-1 ">Some easy steps <br>to get started!</h2>
+    <div class="position-relative mt-5">
+      <div class="">
+        <img src="h-bg-section5.png" alt="" class="images-lines">
+      </div>
+      <div class="row justify-content-center align-items-start">
+        <div class="col-md-4 text-center">
+          <div class="step-card">
+            <img src="h-icon1.png" alt="Business Plan" class="mb-3 w-25 icon-img ">
+            <h5 class="text-start ms-5 fw-bold">Make a business plan</h5>
+            <p class="text-start ms-5">We value the experimentation, the reformation of the message.</p>
+          </div>
+          <span class="step-number fw-bold ">1</span>
+        </div>
+        <div class="col-md-4 text-center second">
+          <div class="step-card">
+            <img src="h-icon2.png" alt="Contact Us" class="mb-3 w-25 icon-img">
+            <h5 class="text-start ms-5 fw-bold">Contact us by message</h5>
+            <p class="text-start ms-5">We value the experimentation, the reformation of the message.</p>
+          </div>
+          <span class="step-number fw-bold">2</span>
+        </div>
+        <div class="col-md-4 text-center third">
+          <div class="step-card">
+            <img src="h-icon3.png" alt="Consult" class="mb-3 w-25 icon-img">
+            <h5 class="text-start ms-5 fw-bold">Consult with us!</h5>
+            <p class="text-start ms-5">We value the experimentation, the reformation of the message.</p>
+          </div>
+          <span class="step-number  fw-bold">3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Steps to start end -->
+  <!-- Case Studies  -->
+  <div class="container-fluid mt-5 pt-3">
+    <div class="row">
+      <!-- Left Section -->
+      <div class="col-md-6 d-flex align-items-center bg-light p-4">
+        <img src="h-case1.jpg" alt="Team" class="img-fluid rounded">
+      </div>
+      <!-- Right Section -->
+      <div class="col-md-6 p-4 ">
+        <div class="mb-4">
+          <div class="d-flex align-items-center  mb-3">
+            <!-- Circles -->
+            <div class="rounded-circle bg-primary  ms-1" style="width: 10px; height: 10px; margin-right: 5px;">
+            </div>
+            <div class="rounded-circle bg-dark  ms-1" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+            <div class="rounded-circle bg-primary  ms-1" style="width: 10px; height: 10px; margin-right: 10px;">
+            </div>
+            <!-- Heading -->
+            <h5 class="text-primary ">Case Studies </h5>
+          </div>
+          <h2 class="fw-bold fs-1 w-100">We're driven to make the complex simple.</h2>
+        </div>
+
+        <ul class="list-unstyled text-center  quality w-50 ">
+          <li class="mb-3">
+            <span class="fw-bold fs-5 mt-5 me-4 ">✔ Best quality support</span>
+          </li>
+          <li class="mb-3">
+            <span class="fw-bold fs-5 mt-5 ">✔ Money back guarantee</span>
+          </li>
+          <li class="mb-3">
+            <span class="fw-bold fs-5 mt-5 me-1">✔ Expert team members</span>
+          </li>
+          <li class="">
+            <span class="fw-bold fs-5 mt-5 me-2">✔ Cheap price provided</span>
+          </li>
+          <a href="#" class="d-block mt-3 text-decoration-none fw-bold me-5"> Learn more about us →</a>
+        </ul>
+
+        <div class="card p-3 Duralex shadow">
+          <div class="card-body">
+            <h5 class="card-title text-muted fw-bold fs-3 ">Duralex Group</h5>
+            <h6 class="card-subtitle mb-2 fw-bold fs-2 w-75 ">International business development</h6>
+            <p class="card-text w-75 text-muted ">
+              Our client, a $4 billion provider of data-center infrastructure, asked us to help redesign its
+              go-to-market approach to better.
+            </p>
+            <a href="#" class="btn btn-primary fw-bold btn-lg">Read more</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Case Studies end -->
+  <!-- Our Pricing  -->
+  <div class="container text-center py-5 mt-5">
+    <div class="d-flex align-items-center justify-content-center text-center mb-3" style="height: 100px;">
+      <!-- Circles -->
+      <div class="rounded-circle bg-primary mt-5" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+      <div class="rounded-circle bg-dark mt-5" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+      <div class="rounded-circle bg-primary mt-5" style="width: 10px; height: 10px; margin-right: 10px;"></div>
+      <!-- Heading -->
+      <h5 class="text-primary mb-0 mt-5">Our Pricing</h5>
+    </div>
+    <h2 class="fw-bold fs-1">We’ve offered the best <br>pricing for you.</h2>
+    <p class="text-muted fs-5 ">We love what we do and we do it with passion. We value the experimentation, <br>
+      the reformation of the message, and the smart incentives.</p>
+
+    <div class="btn-group mt-3" role="group" aria-label="Pricing options">
+      <button type="button" class="btn btn-primary">Monthly</button>
+      <button type="button" class="btn btn-outline-primary">Annually</button>
+    </div>
+    <p class="mt-3 fs-5">** Get a huge discount for annual package!</p>
+  </div>
+  <!-- Our Pricing end -->
+  <!-- cards  -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <!-- Basic Card -->
+      <div class="col-md-4">
+        <div class="card text-start border-0 shadow-sm">
+          <div class="card-body">
+            <h2 class="fw-bold">$15 <span class="text-muted fs-5">/Month</span></h2>
+            <h4 class="fw-bold">Basic</h4>
+            <p class="text-muted">We have worked with companies across and infrastructure providers.</p>
+            <hr>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Cost Transformation</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Customer Experience Leadership</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary text-muted"></i> Customer Episode Design
+              </li>
+              <li><i class="bi bi-check-circle-fill text-primary text-muted"></i> Customer Value Management</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary w-100 mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standard Card -->
+      <div class="col-md-4">
+        <div class="card text-start border-0 shadow-sm">
+          <div class="card-body">
+            <h2 class="fw-bold">$45 <span class="text-muted fs-5">/Month</span></h2>
+            <h4 class="fw-bold">Standard</h4>
+            <p class="text-muted">We have worked with companies across and infrastructure providers.</p>
+            <hr>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Cost Transformation</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Customer Experience Leadership</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Customer Episode Design</li>
+              <li><i class="bi bi-check-circle-fill text-primary text-muted"></i> Customer Value Management</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary w-100 mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Premium Card -->
+      <div class="col-md-4">
+        <div class="card text-start border-0 shadow-sm">
+          <div class="card-body">
+            <h2 class="fw-bold">$75 <span class="text-muted fs-5">/Month</span></h2>
+            <h4 class="fw-bold">Premium</h4>
+            <p class="text-muted">We have worked with companies across and infrastructure providers.</p>
+            <hr>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Cost Transformation</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Customer Experience Leadership</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Customer Episode Design</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> Customer Value Management</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary w-100 mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- card end  -->
+  <!-- consulting mobile  -->
+  <div class="position-relative text-center text-white pt-5" style="height: 76vh;">
+    <!-- Background Image with Overlay -->
+    <div class="position-absolute w-100 h-100"
+      style="background: url('theme-13.jpg') no-repeat center center/cover;"></div>
+    <div class="position-absolute w-100 h-100" style="background: #001352DB;"></div>
+
+    <!-- Content Overlay -->
+    <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
+      <h1 class="fw-bold  display-5">
+        Have a great opportunity to <br />do
+        <span class="text-primary">consulting</span> anytime!
+      </h1>
+      <div class="d-flex justify-content-center mt-3 gap-3">
+        <a href="#" class="btn btn-outline-light px-4">
+          <i class="bi bi-google-play"></i> Google Play
+        </a>
+        <a href="#" class="btn btn-primary px-4">
+          <i class="bi bi-apple"></i> Play Store
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Mobile Image -->
+  <div class="position-absolute start-50 translate-middle-x ">
+    <img src="h-phone.png" alt="Mobile App" class="img-fluid" style="max-width: 60rem; margin-top: -13rem;" />
+  </div>
+  <!-- consulting mobile end -->
+  <!-- Our Vlog  -->
+  <div class="container text-center py-5" style="margin-top: 25vh;">
+    <div class="d-flex align-items-center justify-content-center text-center mb-3" style="height: 100px;">
+      <!-- Circles -->
+      <div class="rounded-circle bg-primary mt-5" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+      <div class="rounded-circle bg-dark mt-5" style="width: 10px; height: 10px; margin-right: 5px;"></div>
+      <div class="rounded-circle bg-primary mt-5" style="width: 10px; height: 10px; margin-right: 10px;"></div>
+      <!-- Heading -->
+      <h5 class="text-primary mb-0 mt-5">Our Vlog</h5>
+    </div>
+    <h2 class="fw-bold fs-1">We’re here to share story & more <br>news from resource library.</h2>
+    <p class="text-muted fs-5 ">Follow our latest news and thoughts which focuses exclusively on design, art,<br>
+      vintage, and also work updates.</p>
+  </div>
+  <!-- cards  -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="update-service-02.jpg" class="card-img-top" alt="Card Image 1">
+          <div class="card-body">
+            <h5 class="card-title text-truncate fw-bold">How Stay Calm from the First Ti...</h5>
+            <p class="card-text">
+              <small class="text-muted fw-bold"><i class="bi bi-calendar"></i> 5 Nov, 2019</small>
+            </p>
+            <p class="card-text">As a web crawler expert, help organizations adjust to the internet promoting. Far away,
+              behind the word.</p>
+            <a href="#" class="btn btn-link fw-bold text-decoration-none">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="u-blog-02-600x373.jpg" class="card-img-top" alt="Card Image 2">
+          <div class="card-body">
+            <h5 class="card-title text-truncate fw-bold mt-3">Why You'll Never Succeed at 7...</h5>
+            <p class="card-text">
+              <small class="text-muted fw-bold"><i class="bi bi-calendar"></i> 5 Nov, 2019</small>
+            </p>
+            <p class="card-text">As a web crawler expert, help organizations adjust to the internet promoting. Far away,
+              behind the word.</p>
+            <a href="#" class="btn btn-link fw-bold text-decoration-none">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="update-blog3.jpg" class="card-img-top" alt="Card Image 3">
+          <div class="card-body">
+            <h5 class="card-title text-truncate fw-bold">You can use it for any kind web...</h5>
+            <p class="card-text">
+              <small class="text-muted fw-bold"><i class="bi bi-calendar"></i> 5 Nov, 2019</small>
+            </p>
+            <p class="card-text">As a web crawler expert, help organizations adjust to the internet promoting. Far away,
+              behind the word.</p>
+            <a href="#" class="btn btn-link fw-bold text-decoration-none">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cards end  -->
+  <!-- Our Vlog end -->
+
+  <!-- bottom button  -->
+  <div id="carouselExampleprimary" class="carousel carousel-dark slide" data-bs-ride="carousel"
+    style="margin-top: 8rem;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleprimary" data-bs-slide-to="0" class="active bg-primary"
+        style="width: 15px; height: 5px;" aria-current="true" aria-label="Slide 1">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleprimary" data-bs-slide-to="1" class="bg-primary"
+        style="width: 15px; height: 5px;" aria-label="Slide 2">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleprimary" data-bs-slide-to="2" class="bg-primary"
+        style="width: 15px; height: 5px;" aria-label="Slide 3">
+      </button>
+    </div>
+  </div>
+  <!-- bottom button end  -->
+  <!-- Subscribe section  -->
+  <div class="container-fluid "
+    style="height: 70vh; background-image: url(h-bg-newsletter.jpg); background-size: cover;">
+    <div class="row no-gutters">
+      <div class="col-12 bg-image d-flex align-items-center justify-content-end text-white">
+        <div class="text-center  p-4">
+          <!-- Logo Image -->
+          <h2 class="fw-bold mt-5 pt-5 fs-1 text-start me-5">Stay ahead in a rapidly changing world.<br><span
+              class="text-primary">Subscribe</span> to our Insights</h2>
+          <form class="row g-3 mt-5">
+            <div class="col-6">
+              <label for="inputPassword2" class="visually-hidden">Email</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Your mail address">
+            </div>
+            <div class="col-3">
+              <button type="submit" class="btn btn-primary mb-3 me-5">Subscribe</button>
+            </div>
+          </form>
+          <p class="mt-3 text-start"><small>*I have read the Privacy Policy and agree to its terms.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Subscribe section end -->
+  <!-- maps section  -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <!-- Map Section -->
+        <div class="position-relative">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19877.865925083325!2d-0.11809209999999999!3d51.509865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMwJzM2LjEiTiAwwrAwNycyOS42Ilc!5e0!3m2!1sen!2sus!4v1616161771319!5m2!1sen!2sus"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+          <!-- Information Panel -->
+          <div class="position-absolute top-50 end-0 translate-middle-y bg-white shadow rounded p-4 me-5"
+            style="width: 350px;">
+            <h5 class="text-white mb-3 bg-primary p-3"><i class="bi bi-geo-alt"></i> Office Locations</h5>
+            <p class="mb-3">We have many branches to help you!</p>
+            <hr>
+            <div class="mb-3">
+              <h6 class="fw-bold">Australia Head Office</h6>
+              <p class="mb-1"><i class="bi bi-geo-alt"></i> 30 Commercial Road, Australia</p>
+              <p class="mb-1"><i class="bi bi-envelope"></i> envato@mail.com</p>
+              <p class="mb-1"><i class="bi bi-telephone"></i> +0188845215</p>
+            </div>
+            <hr>
+            <div>
+              <h6><a href="#" class="text-decoration-none text-dark fw-bold">America Office</a></h6>
+            </div>
+            <hr>
+            <div>
+              <h6><a href="#" class="text-decoration-none text-dark fw-bold">UK Office</a></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- maps section end -->
+  <!-- footerbar -->
+  <footer class="bg-light py-5 mt-5"
+    style=" background-image: url(h-bg-section8.jpg); background-size: cover;">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Logo and About Section -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <img src="logo-dark.png" alt="" style="max-width: 200px; height: auto;">
+          <p class="mt-4">Consultio has been optimized to give your visitors the best experience in terms of UX/UI, with
+            a unique design to deliver all layouts.</p>
+          <ul class="list-unstyled mt-4">
+            <li class="d-flex align-items-center mb-3"><i class="bi bi-telephone text-primary me-2"></i>
+              <span>1-888-452-1505</span>
+            </li>
+            <li class="d-flex align-items-center mb-3"><i class="bi bi-envelope text-primary me-2"></i>
+              <span>info@envato.com</span>
+            </li>
+            <li class="d-flex align-items-center mb-3"><i class="bi bi-geo-alt text-primary me-2"></i> <span>30
+                Commercial Road, Fratton, Australia</span></li>
+          </ul>
+        </div>
+
+        <!-- Links Section -->
+        <div class="col-md-2 mb-4 mb-md-0 mt-4">
+          <h5 class="fw-bold">LINKS</h5>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Home</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">About</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Services</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Projects</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">News</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Support Section -->
+        <div class="col-md-3 mb-4 mb-md-0 mt-4">
+          <h5 class="fw-bold">SUPPORT</h5>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Contact Us</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Submit a Ticket</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Visit Knowledge Base</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Support System</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Refund Policy</a></li>
+            <li class="mb-3"><a href="#" class="text-decoration-none text-dark">Professional Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="col-md-3 mt-4">
+          <h5 class="fw-bold">GALLERY</h5>
+          <div class="row g-2 mt-4">
+            <div class="col-4">
+              <img src="gallery-01-300x300.jpg" class="img-fluid rounded" alt="Gallery Image">
+            </div>
+            <div class="col-4">
+              <img src="gallery-02-300x300.jpg" class="img-fluid rounded" alt="Gallery Image">
+            </div>
+            <div class="col-4">
+              <img src="gallery-03-300x300.jpg" class="img-fluid rounded" alt="Gallery Image">
+            </div>
+            <div class="col-4">
+              <img src="gallery-04-300x300.jpg" class="img-fluid rounded" alt="Gallery Image">
+            </div>
+            <div class="col-4">
+              <img src="gallery-05-300x300.jpg" class="img-fluid rounded" alt="Gallery Image">
+            </div>
+            <div class="col-4">
+              <img src="gallery-06-300x300.jpg" class="img-fluid rounded" alt="Gallery Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footerbar end  -->
+  <!-- Footer Bottom -->
+  <div class="d-flex justify-content-between align-items-center bg-primary text-white py-3 px-4 mt-4">
+    <p class="mb-0 ms-5 ps-5">2025 &copy; All rights reserved by Case-Themes</p>
+    <div class="me-5">
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-dribbble"></i></a>
+      <a href="#" class="text-white me-5"><i class="bi bi-behance"></i></a>
+    </div>
+  </div>
+  </main>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>

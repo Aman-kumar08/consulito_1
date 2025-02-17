@@ -1,0 +1,293 @@
+/* Hero Section Styling */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: changeBackground 25s infinite;
+  flex-direction: column;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* hero text animation */
+@keyframes moveUpAndDisappear {
+  0% {
+    transform: translateY(100px);
+    opacity: 3;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 4;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+.animated-text {
+  animation: moveUpAndDisappear 5s ease-in-out infinite;
+  animation-delay: 0s;
+  position: relative;
+}
+
+/* Keyframe Animation for Background Image Change */
+@keyframes changeBackground {
+  0% {
+    background: url('bg-slider1.jpg') no-repeat center center/cover;
+  }
+
+  33% {
+    background: url('bg-slider2.jpg') no-repeat center center/cover;
+  }
+
+  66% {
+    background: url('bg-slider3.jpg') no-repeat center center/cover;
+  }
+
+  100% {
+    background: url('bg-slider1.jpg') no-repeat center center/cover;
+  }
+}
+
+/* Keyframes for moving content */
+@keyframes contentPositionAnimation {
+
+  0%,
+  100% {
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  25% {
+    transform: translateX(-100%);
+    text-align: left;
+  }
+
+  50% {
+    transform: translateX(0%);
+    text-align: center;
+  }
+
+  75% {
+    transform: translateX(100%);
+    text-align: right;
+  }
+}
+
+/* Circle images at the bottom center */
+.circle-container {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-size: cover;
+  background-position: center;
+  transition: border 0.5s ease-in-out;
+}
+
+/* Border color changes with hero background */
+@keyframes changeCircleBorder {
+  0% {
+    border-color: #007bff;
+  }
+
+  33% {
+    border-color: #ff5733;
+  }
+
+  66% {
+    border-color: #28a745;
+  }
+
+  100% {
+    border-color: #007bff;
+  }
+}
+
+.circle:nth-child(1) {
+  animation: changeCircleBorder 25s infinite;
+}
+
+.circle:nth-child(2) {
+  animation: changeCircleBorder 25s infinite 5s;
+}
+
+.circle:nth-child(3) {
+  animation: changeCircleBorder 25s infinite 10s;
+}
+
+/* Hero Section Content */
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.free {
+  margin-top: -19rem;
+}
+
+/* images circle  */
+.image {
+  margin-bottom: -6rem;
+}
+
+/* card  */
+.card-container {
+  perspective: 1000px;
+}
+
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.free {
+  margin-bottom: -19rem;
+}
+
+/* Ensure the background image covers  */
+.bg-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Center the overlay image */
+.tringle {
+  margin-top: 8.4rem;
+}
+
+.centered-img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  max-width: 40%;
+}
+
+.step-card {
+  padding: 50px;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative;
+  margin-top: -37vh;
+  margin-left: -14vh;
+}
+
+.step-number {
+  font-size: 8rem;
+  color: #e0e0e0;
+  display: inline-block;
+  margin-top: -9rem;
+  margin-left: 15rem;
+}
+
+.images-lines {
+  height: 27rem;
+  margin-left: -15%;
+  margin-top: -12%;
+  width: 87.5rem;
+}
+
+.second {
+  margin-top: -17vh;
+}
+
+.third {
+  margin-top: -29vh;
+}
+
+.card-img {
+  margin-left: -30%;
+  padding: 4px;
+}
+
+.icon-img {
+  margin-left: -30vh;
+  padding: 15px;
+
+}
+
+.Duralex {
+  margin-left: -17rem;
+  height: 20rem;
+  border: none;
+  width: 82%;
+  margin-top: -28.8%;
+}
+
+.quality {
+  margin-left: 39%;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
